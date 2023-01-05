@@ -1,5 +1,4 @@
-import 'package:assignment/card1.dart';
-import 'package:assignment/card2.dart';
+import 'package:assignment/cards.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,17 +27,13 @@ class CardsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("Assignment"),
-        ),
-        body:
-            Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const[
-                CardOne(),
-                CardTwo()
-              ],
-            ) // This trailing comma makes auto-formatting nicer for build methods.
-        );
+      appBar: AppBar(
+        title: const Text("Assignment"),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: const [CardOne(), CardTwo()],
+      ),
+    );
   }
 }
